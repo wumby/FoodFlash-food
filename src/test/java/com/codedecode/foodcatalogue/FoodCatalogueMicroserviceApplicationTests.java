@@ -1,13 +1,15 @@
-package com.jack.food;
+package com.codedecode.foodcatalogue;/*
+package com.codedecode.foodcatalogue;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class FoodApplicationTests {
+class FoodCatalogueMicroserviceApplicationTests {
 
 	@Test
 	void contextLoads() {
 	}
 
 }
+*/

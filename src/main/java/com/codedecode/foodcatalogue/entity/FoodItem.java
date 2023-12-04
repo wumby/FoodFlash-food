@@ -1,4 +1,4 @@
-package com.jack.food.entity;
+package com.codedecode.foodcatalogue.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -15,14 +15,18 @@ public class FoodItem {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
+
     private String itemName;
+
     private String itemDescription;
+
     private boolean isVeg;
-    private Number price;
+
+    private Long price;
+
     private Integer restaurantId;
 
     @Column(nullable = false, columnDefinition = "INT DEFAULT 0")
-    private Integer Quantity;
-
+    private Integer quantity;
 
 }
