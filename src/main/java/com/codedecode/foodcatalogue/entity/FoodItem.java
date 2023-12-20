@@ -22,7 +22,7 @@ public class FoodItem {
 
     private boolean isVeg;
 
-    private Long price;
+    private Number price;
 
     private Integer restaurantId;
 

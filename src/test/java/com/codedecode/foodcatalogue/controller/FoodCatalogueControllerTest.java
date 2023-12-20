@@ -50,7 +50,7 @@ class FoodCatalogueControllerTest {
         when(foodCatalogueService.fetchFoodCataloguePageDetails(restaurantId)).thenReturn(foodCataloguePage);
 
         // Act
-        ResponseEntity<FoodCataloguePage> response = foodCatalogueController.fetchRestauDetailsWithFoodMenu(restaurantId);
+        ResponseEntity<FoodCataloguePage> response = foodCatalogueController.fetchRestaurantDetailsWithFoodMenu(restaurantId);
 
         // Assert
         verify(foodCatalogueService, times(1)).fetchFoodCataloguePageDetails(restaurantId);

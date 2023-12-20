@@ -24,7 +24,7 @@ public class FoodCatalogueController {
     }
 
     @GetMapping("/fetchRestaurantAndFoodItemsById/{restaurantId}")
-    public ResponseEntity<FoodCataloguePage> fetchRestauDetailsWithFoodMenu(@PathVariable Integer restaurantId){
+    public ResponseEntity<FoodCataloguePage> fetchRestaurantDetailsWithFoodMenu(@PathVariable Integer restaurantId){
         FoodCataloguePage foodCataloguePage = foodCatalogueService.fetchFoodCataloguePageDetails(restaurantId);
         return new ResponseEntity<>(foodCataloguePage, HttpStatus.OK);
 
